@@ -62,4 +62,43 @@ header{
     header .narbar ul li a:hover::after{
         width: 5vw;
     }
+
+    header #menu-bar{
+        font-size: 2vw;
+        color: red;
+        cursor: pointer;
+        display: none;
+    }
     
+    @media screen and (max-width:500px)
+    {
+
+        header #menu-bar{
+            font-size: 4vw;
+             display: block;
+             position: fixed;
+             right: 1vw;
+             top: 2vw;
+             z-index: 1000;
+         }
+
+        header .narbar ul{
+            position: fixed;
+            top: 6rem;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            backdrop-filter: blur(2px);
+            /* transform: scaleY(0);
+            transform-origin: top; */
+            opacity: 0;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 0;
+            gap: 4%;
+        
+        }
+
+    }
