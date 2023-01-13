@@ -1,14 +1,15 @@
 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-@import url('https://fonts.googlepis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Montserrat', sans-serif;
+     text-decoration: none;
+     list-style: none;
+    
+ }
 
 header{
     z-index: 999;
@@ -19,17 +20,15 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
+    padding: .8vw;
     transition: 0.5s ease;
     background-color: #fff;
 }
 
-header .brand{
-    color: rgb(235, 34, 34);
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
+
+header .brand img{
+    width: 100%;
+    max-width: 50px;
 }
 
 
@@ -106,7 +105,7 @@ header .navigation .navigation-items a:hover:before{
     .home .content{
         z-index: 888;
         color: #fff;
-        width: 70%;
+        width: 80%;
         margin-top: 20px;
         display: none;
     }
@@ -120,7 +119,7 @@ header .navigation .navigation-items a:hover:before{
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
 /* 
@@ -131,7 +130,7 @@ header .navigation .navigation-items a:hover:before{
         } */
 
         .home .content p{
-            margin-bottom: 65px;
+            margin-bottom: 35px;
         }
 
         .home .content a{
@@ -163,8 +162,6 @@ header .navigation .navigation-items a:hover:before{
             color: #fff;
             font-size: 1.6em;
             transition: 0.3s ease;
-
-
         }
 
         .home .media-icon a:not(:last-child){
@@ -196,7 +193,7 @@ header .navigation .navigation-items a:hover:before{
             justify-content: center;
             align-items: center;
             transform: translateY(30px);
-            margin-bottom: 22px;
+            margin-bottom: 52px;
 
         }
 
@@ -302,7 +299,7 @@ header .navigation .navigation-items a:hover:before{
             flex-direction: column;
             align-items: center;
             border-radius: 5px;
-            box-shadow: 0 5px 25px rgb(235, 126, 126);
+            box-shadow: 0 5px 25px rgb(68, 66, 66);
 
         }
 
@@ -340,3 +337,86 @@ header .navigation .navigation-items a:hover:before{
     }
 
 
+
+    /*Founder*/
+
+#founders{
+    width: 100%;
+    margin-top: 8%;
+}
+
+.founder-container{
+    margin-left: 10%;
+    display: flex;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 80%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    
+}
+
+.founder-container::-webkit-scrollbar{
+    display: none;
+}
+
+.founder-card{
+    flex: 0 0 auto;
+    width: 295px;
+    background: #fff;
+    border: .6px solid rgb(235, 126, 126);
+    margin-top: 3%;
+    margin-right: 40px;
+    border-radius: 13px;
+    margin-bottom: 3%;
+    padding: .5%;
+    position: relative;
+}
+
+.found-image{
+    position: relative;
+    width: 80%;
+margin-left: 10%;
+    overflow: hidden;
+    padding: 1%;
+}
+
+.found-thumb{
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    
+}
+
+.found-info{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-left: 3%;
+   
+}
+
+.found-name{
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+
+.found-info p{
+    margin-left: 4%;
+}
+
+.found-socials{
+    margin-top: 3%;
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.found-socials a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rgb(235, 79, 79);
+}
