@@ -364,10 +364,11 @@ header .navigation .navigation-items a:hover:before{
     flex: 0 0 auto;
     width: 295px;
     background: #fff;
-    border: .6px solid rgb(235, 126, 126);
+    /* border: .6px solid rgb(235, 126, 126); */
+box-shadow: 0 .3rem .5rem rgb(235, 126, 126);
     margin-top: 3%;
     margin-right: 40px;
-    border-radius: 13px;
+    border-radius: 3px;
     margin-bottom: 3%;
     padding: .5%;
     position: relative;
@@ -419,4 +420,8 @@ margin-left: 10%;
     font-size: 1.6rem;
     text-decoration: none;
     color: rgb(235, 79, 79);
+    transition: .5s;
+}
+.found-socials a:hover{
+    color: rgb(235, 40, 40);
 }
