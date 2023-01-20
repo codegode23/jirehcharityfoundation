@@ -38,3 +38,4 @@ btn.addEventListener("click", () =>{
     sliderNav(i);
 });
 });
+

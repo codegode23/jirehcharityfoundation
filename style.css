@@ -13,16 +13,15 @@
 
 header{
     z-index: 999;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .8vw;
     transition: 0.5s ease;
-    background-color: #fff;
 }
 
 
@@ -45,7 +44,7 @@ header .navigation{
 
 header .navigation .navigation-items a{
     position: relative;
-    color: #000;
+    color: #fff;
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
@@ -242,7 +241,6 @@ header .navigation .navigation-items a:hover:before{
 
                     
         header{
-        
             padding: 12px 20px;
             transition: 0.5s ease;
         }
@@ -258,13 +256,13 @@ header .navigation .navigation-items a:hover:before{
         }
 
         header .navigation{
-           
-          display: none;
+          /* display: none; */
+          left: -100%;
     
      }
 
         header .navigation.active{
-            position: fixed;
+            /* position: fixed;
             width: 100%;
             height: 100vh;
             top: 0; 
@@ -272,12 +270,20 @@ header .navigation .navigation-items a:hover:before{
             display: flex;
             justify-content: center;
             align-items: center;
+            background: rgba(1, 1, 1, 0.5); */
+            position: fixed;
+            width: 100%;
+            height: 100vh;
             background: rgba(1, 1, 1, 0.5);
+            top: 80px;
+            left: 0;
+            text-align: center;
+            transition: all .5s;
     
     }
 
         header .navigation .navigation-items a{
-            color: #222;
+            color: #fff;
             font-size: 1.2em;
             margin: 20px;
         }
@@ -290,16 +296,19 @@ header .navigation .navigation-items a:hover:before{
         } */
 
         header .navigation.active .navigation-items{
-            background: white;
+            /* background: white;
             width: 600px;
-            max-width: 600px;
+            max-width: 600px; */
             margin: 20px;
             padding: 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            border-radius: 5px;
-            box-shadow: 0 5px 25px rgb(68, 66, 66);
+            /* border-radius: 5px;
+            box-shadow: 0 5px 25px rgb(68, 66, 66); */
+            /* display: block;
+        margin: 50px 0;
+        line-height: 30px; */
 
         }
 
