@@ -439,3 +439,27 @@ margin-left: 10%;
 .found-socials a:hover{
     color: rgb(235, 40, 40);
 }
+
+
+/*Volunteer*/
+
+
+#volunteer{
+    margin-top: 7%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),#f15159), url(img/vol.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 70vh;
+}
+
+.volunteer .vol-title{
+    text-align: center;
+    margin-top: 1%;
+    color: #fff;
+}
+
+.vol-title h1{
+    font-size: 40px;
+}
