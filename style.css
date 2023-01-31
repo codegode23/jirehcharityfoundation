@@ -458,10 +458,16 @@ margin-left: 10%;
     text-align: center;
     margin-top: 1%;
     color: #fff;
+    padding: 1rem;
 }
 
 .vol-title h1{
     font-size: 40px;
+}
+
+.vol-title h2{
+    font-size: 40px;
+    margin-top: 3%;
 }
 
 .volunteer .vol-container{
@@ -484,4 +490,11 @@ margin-left: 10%;
     margin-top: 5%;
     padding: 1rem;
     border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .vol-container .vol-card{
+        width: 100%;
+        max-width: 450px;
+    }
 }
