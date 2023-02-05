@@ -379,7 +379,7 @@ header .navigation .navigation-items a:hover:before{
     width: 295px;
     background: #fff;
     /* border: .6px solid rgb(235, 126, 126); */
-box-shadow: 0 .3rem .5rem rgb(131, 77, 77);
+    box-shadow: 0 .3rem .5rem rgb(131, 77, 77);
     margin-top: 3%;
     margin-right: 40px;
     border-radius: 3px;
@@ -391,7 +391,7 @@ box-shadow: 0 .3rem .5rem rgb(131, 77, 77);
 .found-image{
     position: relative;
     width: 80%;
-margin-left: 10%;
+    margin-left: 10%;
     overflow: hidden;
     padding: 1%;
 }
@@ -408,7 +408,6 @@ margin-left: 10%;
     height: 100%;
     padding: 10px;
     margin-left: 3%;
-   
 }
 
 .found-name{
@@ -516,7 +515,7 @@ margin-left: 10%;
 
 #progress-bar-container {
 	position:relative;
-	width:90%;
+	width:100%;
 	margin:auto;
 	height:100px;
 	margin-top:65px;
@@ -526,10 +525,10 @@ margin-left: 10%;
 	padding:0;
 	margin:0;
 	padding-top:15px;
-	z-index:9999;
+	z-index:99;
 	position:absolute;
 	width:100%;
-	margin-top:-40px
+	margin-top:-40px;
 }
 
 #progress-bar-container li:before {
@@ -541,13 +540,11 @@ margin-left: 10%;
 	border-radius:50%;
 	border:solid 2px #aaa;
 	transition:all ease 0.3s;
-     
 }
 
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
 	border:solid 2px #fff;
-       	 
-	background: linear-gradient(to right, #E91E63 0%,#fff 100%); 
+	background: linear-gradient(to right, rgb(231, 68, 68) 60%,#fff 100%); 
 }
 
 #progress-bar-container li {
@@ -564,6 +561,7 @@ margin-left: 10%;
 	vertical-align:bottom;
 	height:60px;
 	position:relative;
+    
 }
 
 #progress-bar-container li .step-inner {
@@ -571,6 +569,7 @@ margin-left: 10%;
 	width:100%;
 	bottom:0;
     font-size: 14px;
+    border: 1px solid black;
 }
 
 #progress-bar-container li.active, #progress-bar-container li:hover {
