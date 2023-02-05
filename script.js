@@ -50,26 +50,31 @@ $(".step").click( function() {
 });
 
 $(".step01").click( function() {
-	$("#line-progress").css("width", "3%");
+	$("#line-progress").css("width", "0%");
 	$(".discovery").addClass("active").siblings().removeClass("active");
 });
 
 $(".step02").click( function() {
-	$("#line-progress").css("width", "25%");
+	$("#line-progress").css("width", "20%");
 	$(".strategy").addClass("active").siblings().removeClass("active");
 });
 
 $(".step03").click( function() {
-	$("#line-progress").css("width", "50%");
+	$("#line-progress").css("width", "40%");
 	$(".creative").addClass("active").siblings().removeClass("active");
 });
 
 $(".step04").click( function() {
-	$("#line-progress").css("width", "75%");
+	$("#line-progress").css("width", "60%");
 	$(".production").addClass("active").siblings().removeClass("active");
 });
 
 $(".step05").click( function() {
+	$("#line-progress").css("width", "80%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+$(".step06").click( function() {
 	$("#line-progress").css("width", "100%");
 	$(".analysis").addClass("active").siblings().removeClass("active");
 });
