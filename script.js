@@ -55,27 +55,37 @@ $(".step01").click( function() {
 });
 
 $(".step02").click( function() {
-	$("#line-progress").css("width", "20%");
+	$("#line-progress").css("width", "15%");
 	$(".strategy").addClass("active").siblings().removeClass("active");
 });
 
 $(".step03").click( function() {
-	$("#line-progress").css("width", "40%");
+	$("#line-progress").css("width", "30%");
 	$(".creative").addClass("active").siblings().removeClass("active");
 });
 
 $(".step04").click( function() {
-	$("#line-progress").css("width", "60%");
+	$("#line-progress").css("width", "45%");
 	$(".production").addClass("active").siblings().removeClass("active");
 });
 
 $(".step05").click( function() {
-	$("#line-progress").css("width", "80%");
+	$("#line-progress").css("width", "60%");
 	$(".analysis").addClass("active").siblings().removeClass("active");
 });
 
 $(".step06").click( function() {
-	$("#line-progress").css("width", "100%");
+	$("#line-progress").css("width", "75%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+$(".step07").click( function() {
+	$("#line-progress").css("width", "90%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+$(".step08").click( function() {
+	$("#line-progress").css("width", "105%");
 	$(".analysis").addClass("active").siblings().removeClass("active");
 });
 

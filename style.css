@@ -603,7 +603,7 @@ header .navigation .navigation-items a:hover:before{
 }
 
 #progress-bar-container li.active:after {
-	background:#207893;
+	background:rgb(231, 68, 68);
 }
 
 #progress-bar-container #line {
