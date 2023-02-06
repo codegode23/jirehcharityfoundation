@@ -558,6 +558,7 @@ header .navigation .navigation-items a:hover:before{
 #progress-bar-container li {
 	list-style:none;
 	float:left;
+    display: flex;
 	width:100%;
 	text-align:center;
 	color:#aaa;
@@ -569,7 +570,6 @@ header .navigation .navigation-items a:hover:before{
 	vertical-align:bottom;
 	height:60px;
 	position:relative;
-    
 }
 
 #progress-bar-container li .step-inner {
