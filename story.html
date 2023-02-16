@@ -66,6 +66,23 @@
 
 
     </div>
+
+    <script>
+        
+ let fullimgBox = document.getElementById("fullimgBox");
+ let fullimg = document.getElementById("fullimg");
+
+
+function openFullimg(pick){
+    fullimgBox.style.display = "flex";
+    fullimg.src = pick;
+}
+
+function closeFullimg(pick){
+    fullimgBox.style.display = "none";
+}
+
+    </script>
     
     <script src="script.js"></script>
 </body>

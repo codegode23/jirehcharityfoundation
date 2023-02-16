@@ -93,17 +93,17 @@ $(".step08").click( function() {
 
  //gallery section starts
 
- let fullimgBox = document.getElementById("fullimgBox");
- let fullimg = document.getElementById("fullimg");
+//  let fullimgBox = document.getElementById("fullimgBox");
+//  let fullimg = document.getElementById("fullimg");
 
 
-function openFullimg(pick){
-    fullimgBox.style.display = "flex";
-    fullimg.src = pick;
-}
+// function openFullimg(pick){
+//     fullimgBox.style.display = "flex";
+//     fullimg.src = pick;
+// }
 
-function closeFullimg(pick){
-    fullimgBox.style.display = "none";
-}
+// function closeFullimg(pick){
+//     fullimgBox.style.display = "none";
+// }
 
 //gallery section ends
