@@ -22,14 +22,15 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: .3rem;
     align-items: center;
-    background-color: #eee;
+    scroll-snap-align: start;
+    transition: .6s ease-in-out;
 }
 
 #story1.left-side, #story2.left-side, #story3.left-side, #story4.left-side{
     width: 100%;
-    padding: .5rem;
+    padding: .2rem;
 }
 
 #story1 .right-side, #story2 .right-side, #story3 .right-side, #story4 .right-side{
@@ -56,10 +57,10 @@
     #story1, #story2, #story3, #story4{
         padding: .1rem;
     }
-
     
-#story1, #story2, #story3, #story4 .left-side{
-    width: 100%;
-    padding: .1rem;
-}
+    #story1, #story2, #story3, #story4 .left-side{
+        width: 100%;
+        padding: .1rem;
+    }
+
 }
