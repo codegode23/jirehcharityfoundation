@@ -11,6 +11,13 @@
 }
 
 #story{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    transition: .6s;
+}
+
+#story1, #story2, #story3, #story4{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,12 +27,12 @@
     background-color: #eee;
 }
 
-#story .left-side{
+#story1.left-side, #story2.left-side, #story3.left-side, #story4.left-side{
     width: 100%;
     padding: .5rem;
 }
 
-#story .right-side{
+#story1 .right-side, #story2 .right-side, #story3 .right-side, #story4 .right-side{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -45,3 +52,14 @@
     width: 100%;
 }
 
+@media screen and (max-width: 650px) {
+    #story1, #story2, #story3, #story4{
+        padding: .1rem;
+    }
+
+    
+#story1, #story2, #story3, #story4 .left-side{
+    width: 100%;
+    padding: .1rem;
+}
+}
