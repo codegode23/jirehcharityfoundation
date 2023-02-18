@@ -27,5 +27,21 @@
 
 #story .right-side{
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.right-side .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.right-side .gallery img{
+    width: 100%;
 }
 
