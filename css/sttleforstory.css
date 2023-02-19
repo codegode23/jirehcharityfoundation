@@ -21,9 +21,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
     padding: .3rem;
-    align-items: center;
     scroll-snap-align: start;
     transition: .6s ease-in-out;
 }
@@ -31,16 +29,29 @@
 #story1 .left-side, #story2 .left-side, #story3 .left-side, #story4 .left-side{
     width: 50%;
     padding: .2rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#story1 .left-side h1, #story2 .left-side h1, #story3 .left-side h1, #story4 .left-side h1{
+    font-size: 5vw;
+    margin-top: 6%;
+}
+
+#story1 .left-side p, #story2 .left-side p, #story3 .left-side p, #story4 .left-side p{
+    font-size: 2vw;
 }
 
 #story1 .right-side, #story2 .right-side, #story3 .right-side, #story4 .right-side{
     width: 50%;
-    height: 70vh;
+    height: 96vhh;
     overflow: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     align-items: center;
-    border: 1px solid black;
+    /* margin-top: 4%; */
 
     /* padding: 50px 8%; */
 }
@@ -59,18 +70,26 @@
         
     }
 
+    
+#story1 .left-side h1, #story2 .left-side h1, #story3 .left-side h1, #story4 .left-side h1{
+    font-size: 5vw;
+    margin-top: 2%;
+}
+   
+
     #story1 .left-side, #story2 .left-side, #story3 .left-side, #story4 .left-side{
         width: 100%;
         padding: 0;
+        margin-bottom: 5%;
     }
 
     
 #story1 .right-side, #story2 .right-side, #story3 .right-side, #story4 .right-side{
     width: 100%;
-    /* height: 100vh; */
+    height: 200vh;
     overflow: auto;
-    border: 1px solid black;
     margin-bottom: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     /* padding: 50px 8%; */
 }
     
@@ -86,4 +105,30 @@
         padding: .1rem;
     }
 
+    
+#story1 .left-side h1, #story2 .left-side h1, #story3 .left-side h1, #story4 .left-side h1{
+    font-size: 7vw;
+}
+
+    
+#story1 .left-side p, #story2 .left-side p, #story3 .left-side p, #story4 .left-side p{
+    font-size: 5vw;
+}
+
+}
+
+
+@media screen and (max-width:350px) {
+
+       
+#story1 .right-side, #story2 .right-side, #story3 .right-side, #story4 .right-side{
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    gap: 0;
+}
+    
+.right-side img{
+    width: 100%;
+    max-width: 100px;
+    border-radius: 4px;
+}
 }
