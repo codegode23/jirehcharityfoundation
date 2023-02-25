@@ -107,3 +107,5 @@ $(".step08").click( function() {
 // }
 
 //gallery section ends
+
+var s = skrollr.init();
