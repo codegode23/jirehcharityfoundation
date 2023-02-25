@@ -93,20 +93,25 @@ $(".step08").click( function() {
 
  //gallery section starts
 
-//  let fullimgBox = document.getElementById("fullimgBox");
-//  let fullimg = document.getElementById("fullimg");
+ $(document).ready(function(){
+
+    $(".buttons").click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter');
+
+        if(filter == 'all'){
+            $('.image').show(400);
+        }else{
+            $('.image').not('.'+filter).hide(200);
+            $('.image').filter('.'+filter).show(400);
+        }
+
+    });
 
 
-// function openFullimg(pick){
-//     fullimgBox.style.display = "flex";
-//     fullimg.src = pick;
-// }
-
-// function closeFullimg(pick){
-//     fullimgBox.style.display = "none";
-// }
-
-//gallery section ends
+});
 
 //Reveal on Scroll
 
