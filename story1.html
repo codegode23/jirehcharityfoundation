@@ -7,7 +7,6 @@
     <title>Second Try At Story</title>
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="progress_bar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -24,9 +23,29 @@
                 highest men did boy. Mistress sensible entirely am so. Quick can manor smart 
                 money hopes worth too.</p>
 
-            <a href="" class="read">Read More</a> <br>
+            <h4 class="read">Read More</h4> 
             
-            <h4>Location: There</h4>
+        </div>
+
+
+        <div class="story1-more">
+
+            <h2>More info here</h2>
+
+            <div class="more">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nulla dolor recusandae
+                    quidem unde, culpa voluptatem vitae reiciendis dolore doloremque similique iure delectus sint
+                     eum. Inventore tempora, ipsum, neque natus placeat fugit, dolor hic dicta architecto assumenda
+                      rem dolore deserunt accusantium? Deserunt omnis vel possimus animi quaerat exercitationem est
+                       sint magnam sapiente provident ut beatae itaque perferendis autem a, voluptate, eius architecto 
+                       eum culpa quibusdam, ipsam facilis. Eos, dolores, similique ratione dolore odit natus labore
+                        sit modi officiis voluptates in aut veniam quia itaque voluptatum, recusandae laboriosam 
+                        commodi ipsam animi laudantium voluptatibus deleniti? Aliquid consequatur iste voluptate 
+                        quos enim at?</p>
+            </div>
+           
+            <div class="close-more">Close</div>
+
         </div>
 
         <div class="story-gallery">
@@ -61,7 +80,6 @@
                     <img src="img/Group 10.png">
                 </a>
     
-    
                 <a href="img/Group 9.png" data-lightbox="models" class="image images">
                     <img src="img/Group 9.png" >
                 </a>
@@ -84,9 +102,45 @@
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
-    
-    PageScrollIndicator.createProgressBar("#container", "#main");
+    <script>
+
+        //filterable Galleries 
+            $(document).ready(function(){
+
+                $(".story-gallery .controls .buttons").click(function(){
+
+                    $(this).addClass('active').siblings().removeClass('active');
+
+                    var filter = $(this).attr('data-filter');
+
+                    if(filter == 'all'){
+                        $('.story-gallery .image-container .image').show(400);
+                    }else{
+                        $('.story-gallery .image-container .image').not('.'+filter).hide(200);
+                        $('.story-gallery .image-container .image').filter('.'+filter).show(400);
+                    }
+
+            });
+
+        });
+
+        /*Pop Ups*/
+        const pop = document.querySelector(".read");
+        const story1 = document.querySelector(".story1-more");
+
+        pop.addEventListener("click", ()=>{
+
+            pop.classList.toggle("active");
+            story1.classList.toggle("active");
+            
+
+        });
+
+
+        document.querySelector('.close-more').onclick = () =>{
+            story1.classList.remove('active');
+        };
+
     </script>
     
     
