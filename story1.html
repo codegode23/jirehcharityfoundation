@@ -51,7 +51,8 @@
         <div class="story-gallery">
 
             <ul class="controls">
-                <li class="buttons active" data-filter="images">Images</li>
+                <li class="buttons active" data-filter="all">All</li>
+                <li class="buttons" data-filter="images">Images</li>
                 <li class="buttons" data-filter="videos">Videos</li>
             </ul>
 
@@ -83,6 +84,10 @@
                 <a href="img/Group 9.png" data-lightbox="models" class="image images">
                     <img src="img/Group 9.png" >
                 </a>
+
+                <div class="image video videos">
+                    <video src="vids/hm1.mp4"></video>
+                </div>
 
             </div>
 
@@ -140,6 +145,22 @@
         document.querySelector('.close-more').onclick = () =>{
             story1.classList.remove('active');
         };
+
+        //Video popup
+        let video = document.querySelectorAll('video');
+
+            video.forEach(play => play.addEventListener ('click', () => {
+
+            play.classList.toggle('active');
+
+            if(play.paused){
+                play.play();
+            }else{
+                play.pause();
+                play.currentTime = 0;
+            }
+            
+        }));
 
     </script>
     
