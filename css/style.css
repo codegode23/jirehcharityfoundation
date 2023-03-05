@@ -141,6 +141,7 @@ header .navigation .navigation-items a:hover:before{
             text-decoration: none;
             border-radius: 2px;
             transition: .5s;
+            border-radius: 40px;
         }
 
         .home .content a:hover{
@@ -556,12 +557,14 @@ header .navigation .navigation-items a:hover:before{
 
 #about{
     width: 100%;
+}
+
+.abt-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
 .abt-left{
     display: flex;
     flex-direction: column;
@@ -570,10 +573,10 @@ header .navigation .navigation-items a:hover:before{
 
 .abt-left .image{
     height: 250px;
-    width: 600px;
+    width: 550px;
     overflow: hidden;
     border-radius: 5px;
-     margin-top: 10px;
+    margin-top: 10px;
 }
 
 .abt-left .image img{
@@ -584,9 +587,12 @@ header .navigation .navigation-items a:hover:before{
 
 .abt-right{
     width: 50%;
-    border: 1px solid black;
-    margin-top: -10%;
+    /* margin-top: -5px; */
     padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgb(241, 182, 182) 0px 0px 16px;
 }
 
 .abt-right h1{
@@ -597,4 +603,25 @@ header .navigation .navigation-items a:hover:before{
 
 .abt-right p{
     font-size: 20px;
+}
+
+.abt-right a{
+    background: #fff;
+    /* border: 1px solid rgb(231, 68, 68); */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 15px 20px;
+    color: rgb(231, 68, 68);
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+    transition: .5s;
+    border-radius: 40px;
+    width: 40%;
+    margin: 20px;
+}
+
+.abt-right a:hover{
+    background-color: rgb(231, 68, 68);
+    color: #fff;
 }
