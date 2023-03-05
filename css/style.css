@@ -542,7 +542,7 @@ header .navigation .navigation-items a:hover:before{
 
 .reveal{
     position: relative;
-    transform: translateX(150px);
+    transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease;
 }
@@ -550,4 +550,51 @@ header .navigation .navigation-items a:hover:before{
 .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+}
+
+/*About section Starts*/
+
+#about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.abt-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.abt-left .image{
+    height: 250px;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 5px;
+     margin-top: 10px;
+}
+
+.abt-left .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.abt-right{
+    width: 50%;
+    border: 1px solid black;
+    margin-top: -10%;
+    padding: .5rem;
+}
+
+.abt-right h1{
+    margin-bottom: 3%;
+    color: rgb(241, 56, 56);
+    font-size: 20px;
+}
+
+.abt-right p{
+    font-size: 20px;
 }
