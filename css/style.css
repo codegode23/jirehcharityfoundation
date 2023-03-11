@@ -573,14 +573,15 @@ header .navigation .navigation-items a:hover:before{
 
 .abt-left .image{
     height: 250px;
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
     overflow: hidden;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 .abt-left .image img{
-    height: 100%;
+    height: 100%; 
     width: 100%;
     object-fit: cover;
 }
@@ -619,9 +620,36 @@ header .navigation .navigation-items a:hover:before{
     border-radius: 40px;
     width: 40%;
     margin: 20px;
+    display: flex;
+    justify-content: end;
 }
 
 .abt-right a:hover{
     background-color: rgb(231, 68, 68);
     color: #fff;
+}
+
+@media screen and (max-width: 760px){
+    .abt-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .abt-right{
+        width: 100%;
+    }
+
+    .abt-left{
+        width: 100%;
+    }
+
+    .abt-left .image{
+        height: 250px;
+        width: 100%;
+        max-width: 1000px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
 }
