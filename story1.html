@@ -13,7 +13,7 @@
 
     <div id="story1">
 
-        <div class="stor-info">
+        <div class="stor-info reveal">
             <h1>Visit To Larabanga</h1>
             <p>Mistress sensible entirely am so. Quick can manor smart money hopes worth too. 
                 Comfort produce husband boy her had hearing. Law others theirs passed but wishes. 
@@ -30,7 +30,7 @@
 
         <div class="story1-more">
 
-            <h2>More info here</h2>
+            <!-- <h2>More info here</h2> -->
 
             <div class="more">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nulla dolor recusandae
@@ -48,7 +48,7 @@
 
         </div>
 
-        <div class="story-gallery">
+        <div class="story-gallery reveal">
 
             <ul class="controls">
                 <li class="buttons active" data-filter="all">All</li>
@@ -98,7 +98,7 @@
     </div>
     <div id="story1">
 
-        <div class="stor-info">
+        <div class="stor-info reveal">
             <h1>Visit To Larabanga</h1>
             <p>Mistress sensible entirely am so. Quick can manor smart money hopes worth too. 
                 Comfort produce husband boy her had hearing. Law others theirs passed but wishes. 
@@ -133,7 +133,7 @@
 
         </div>
 
-        <div class="story-gallery">
+        <div class="story-gallery reveal">
 
             <ul class="controls">
                 <li class="buttons active" data-filter="all">All</li>
@@ -183,7 +183,7 @@
     </div>
     <div id="story1">
 
-        <div class="stor-info">
+        <div class="stor-info reveal">
             <h1>Visit To Larabanga</h1>
             <p>Mistress sensible entirely am so. Quick can manor smart money hopes worth too. 
                 Comfort produce husband boy her had hearing. Law others theirs passed but wishes. 
@@ -218,7 +218,7 @@
 
         </div>
 
-        <div class="story-gallery">
+        <div class="story-gallery reveal">
 
             <ul class="controls">
                 <li class="buttons active" data-filter="all">All</li>
@@ -280,23 +280,21 @@
     <script>
 
         //filterable Galleries 
-            $(document).ready(function(){
+        $(document).ready(function(){
 
-                $(".story-gallery .controls .buttons").click(function(){
+            $(".story-gallery .controls .buttons").click(function(){
 
-                    $(this).addClass('active').siblings().removeClass('active');
+                $(this).addClass('active').siblings().removeClass('active');
 
-                    var filter = $(this).attr('data-filter');
+                var filter = $(this).attr('data-filter');
 
-                    if(filter == 'all'){
-                        $('.story-gallery .image-container .image').show(400);
-                    }else{
-                        $('.story-gallery .image-container .image').not('.'+filter).hide(200);
-                        $('.story-gallery .image-container .image').filter('.'+filter).show(400);
-                    }
-
+                if(filter == 'all'){
+                    $('.story-gallery .image-container .image').show(400);
+                }else{
+                    $('.story-gallery .image-container .image').not('.'+filter).hide(200);
+                    $('.story-gallery .image-container .image').filter('.'+filter).show(400);
+                }
             });
-
         });
 
         /*Pop Ups*/
@@ -330,6 +328,27 @@
             }
             
         }));
+
+        //Reveal on Scroll
+
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 150;
+
+        if(revealtop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    } 
+}
 
     </script>
     

@@ -28,17 +28,18 @@
 }
 
 .stor-info h4{
-    background: #f8afaf;
+    background: #fff;
     padding: 15px 35px;
-    color: #333;
+    color: #666;
     font-weight: 500;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 40px;
     transition: .5s;
     margin-bottom: 3%;
     width: 100%;
     max-width: 180px;
     cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
 }
 
 .stor-info h4:hover{
@@ -71,7 +72,7 @@
     margin: 20px;
     box-shadow: 0 3px 5px rgba(0,0,0,.3);
     text-align: center;
-    border-radius: 5px;
+    border-radius: 40px;
 }
 
 .story-gallery .controls .buttons.active{
@@ -87,16 +88,24 @@
     flex-wrap: wrap;
     height: 100vh;
     overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+}
+
+.story-gallery .image-container::-webkit-scrollbar{
+    display: none;
 }
 
 .story-gallery .image-container .image{
     height: 250px;
-    width: 350px;
+    width: 250px;
     overflow: hidden;
     border: 3px solid #fff;
     /* box-shadow: 0 3px 5px rgba(0,0,0,.3); */
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
      margin: 20px;
+     border-radius: 30px;
 }
 
 .story-gallery .image-container .image img
@@ -173,6 +182,17 @@
     padding: 1rem;
     height: 70vh;
     overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 16px;
+    color: #333;
+    font-size: 25px;
+}
+
+.story1-more .more::-webkit-scrollbar{
+    display: none;
 }
 
 .close-more{
@@ -186,6 +206,8 @@
     margin-bottom: 3%;
     cursor: pointer;
     margin-top: 3%;
+   border-radius: 40px;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 16px;
 }
 
 .close-more:hover{
@@ -236,4 +258,17 @@
     .story-gallery .controls .buttons{
        font-size: 15px;
     }
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
