@@ -593,7 +593,7 @@ header .navigation .navigation-items a:hover:before{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: rgb(241, 182, 182) 0px 0px 16px;
+    box-shadow: rgb(235, 223, 223) 0px 0px 16px;
 }
 
 .abt-right h1{
