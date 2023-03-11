@@ -75,7 +75,7 @@ header .navigation .navigation-items a:hover:before{
 
 
     section{
-        padding: 1vw 2vw;
+        padding: .5vw 1vw;
     }
 
 
@@ -607,21 +607,17 @@ header .navigation .navigation-items a:hover:before{
 }
 
 .abt-right a{
-    background: #fff;
-    /* border: 1px solid rgb(231, 68, 68); */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    padding: 15px 20px;
-    color: rgb(231, 68, 68);
+    background: #fff;
+    padding: 15px 35px;
+    color: #000;
     font-weight: 500;
     text-decoration: none;
-    text-align: center;
     border-radius: 2px;
     transition: .5s;
     border-radius: 40px;
-    width: 40%;
-    margin: 20px;
-    display: flex;
-    justify-content: end;
+    margin: 4%;
+    text-align: center;
 }
 
 .abt-right a:hover{
@@ -644,12 +640,35 @@ header .navigation .navigation-items a:hover:before{
     }
 
     .abt-left .image{
-        height: 250px;
+        height: 200px;
         width: 100%;
         max-width: 1000px;
         overflow: hidden;
         border-radius: 5px;
         margin-top: 10px;
     }
+
+    .abt-right a{
+        padding: 15px 15px;
+    }
+
+    
+.abt-right{
+    padding: .5rem;
+}
+
+.abt-right h1{
+    font-size: 17px;
+}
+
+.abt-right p{
+    font-size: 18px;
+}
     
 }
+/* 
+@media screen and (max-width: 310px){
+    .abt-right a{
+        font-size: 12px;
+    }
+} */
