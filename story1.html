@@ -136,41 +136,41 @@
         <div class="story-gallery reveal">
 
             <ul class="controls">
-                <li class="buttons active" data-filter="all">All</li>
-                <li class="buttons" data-filter="images">Images</li>
-                <li class="buttons" data-filter="videos">Videos</li>
+                <li class="buttons1 active" data-filter="all1">All</li>
+                <li class="buttons1" data-filter="images">Images</li>
+                <li class="buttons1" data-filter="videos">Videos</li>
             </ul>
 
             <div class="image-container">
 
-                <a href="img/girl2.jpg" data-lightbox="models" class="image images" >
+                <a href="img/girl2.jpg" data-lightbox="models" class="image1 images" >
                     <img src="img/girl2.jpg">
                 </a>
-                <a href="img/girl2.jpg" data-lightbox="models" class="image images">
+                <a href="img/girl2.jpg" data-lightbox="models" class="image1 images">
                     <img src="img/girl2.jpg">
                 </a>
-                <a href="img/girl2.jpg" data-lightbox="models" class="image images">
+                <a href="img/girl2.jpg" data-lightbox="models" class="image1 images">
                     <img src="img/girl2.jpg">
                 </a>
-                <a href="img/Group 10.png" data-lightbox="models" class="image images">
+                <a href="img/Group 10.png" data-lightbox="models" class="image1 images">
                     <img src="img/Group 10.png">
                 </a>
-                <a href="img/vol.jpg" data-lightbox="models" class="image images">
+                <a href="img/vol.jpg" data-lightbox="models" class="image1 images">
                     <img src="img/vol.jpg">
                 </a>
-                <a href="img/Group 8.png" data-lightbox="models" class="image images">
+                <a href="img/Group 8.png" data-lightbox="models" class="image1 images">
                     <img src="img/Group 8.png">
                 </a>
     
-                <a href="img/Group 10.png" data-lightbox="models" class="image images">
+                <a href="img/Group 10.png" data-lightbox="models" class="image1 images">
                     <img src="img/Group 10.png">
                 </a>
     
-                <a href="img/Group 9.png" data-lightbox="models" class="image images">
+                <a href="img/Group 9.png" data-lightbox="models" class="image1 images">
                     <img src="img/Group 9.png" >
                 </a>
 
-                <div class="image video videos">
+                <div class="image1 video1 videos">
                     <video src="vids/hm1.mp4"></video>
                 </div>
 
@@ -221,50 +221,45 @@
         <div class="story-gallery reveal">
 
             <ul class="controls">
-                <li class="buttons active" data-filter="all">All</li>
-                <li class="buttons" data-filter="images">Images</li>
-                <li class="buttons" data-filter="videos">Videos</li>
+                <li class="buttons2 active" data-filter="all2">All</li>
+                <li class="buttons2" data-filter="images">Images</li>
+                <li class="buttons2" data-filter="videos">Videos</li>
             </ul>
 
             <div class="image-container">
 
-                <a href="img/girl2.jpg" data-lightbox="models" class="image images" >
+                <a href="img/girl2.jpg" data-lightbox="models" class="image2 images" >
                     <img src="img/girl2.jpg">
                 </a>
-                <a href="img/girl2.jpg" data-lightbox="models" class="image images">
+                <a href="img/girl2.jpg" data-lightbox="models" class="image2 images">
                     <img src="img/girl2.jpg">
                 </a>
-                <a href="img/girl2.jpg" data-lightbox="models" class="image images">
+                <a href="img/girl2.jpg" data-lightbox="models" class="image2 images">
                     <img src="img/girl2.jpg">
                 </a>
-                <a href="img/Group 10.png" data-lightbox="models" class="image images">
+                <a href="img/Group 10.png" data-lightbox="models" class="image2 images">
                     <img src="img/Group 10.png">
                 </a>
-                <a href="img/vol.jpg" data-lightbox="models" class="image images">
+                <a href="img/vol.jpg" data-lightbox="models" class="image2 images">
                     <img src="img/vol.jpg">
                 </a>
-                <a href="img/Group 8.png" data-lightbox="models" class="image images">
+                <a href="img/Group 8.png" data-lightbox="models" class="image2 images">
                     <img src="img/Group 8.png">
                 </a>
     
-                <a href="img/Group 10.png" data-lightbox="models" class="image images">
+                <a href="img/Group 10.png" data-lightbox="models" class="image2 images">
                     <img src="img/Group 10.png">
                 </a>
     
-                <a href="img/Group 9.png" data-lightbox="models" class="image images">
+                <a href="img/Group 9.png" data-lightbox="models" class="image2 images">
                     <img src="img/Group 9.png" >
                 </a>
 
-                <div class="image video videos">
+                <div class="image2 video2 videos">
                     <video src="vids/hm1.mp4"></video>
                 </div>
-
             </div>
-
-
         </div>
-
-
     </div>
 
 
@@ -282,22 +277,56 @@
         //filterable Galleries 
         $(document).ready(function(){
 
-            $(".story-gallery .controls .buttons").click(function(){
+            $(".buttons").click(function(){
 
                 $(this).addClass('active').siblings().removeClass('active');
 
                 var filter = $(this).attr('data-filter');
 
                 if(filter == 'all'){
-                    $('.story-gallery .image-container .image').show(400);
+                    $('.image').show(400);
                 }else{
-                    $('.story-gallery .image-container .image').not('.'+filter).hide(200);
-                    $('.story-gallery .image-container .image').filter('.'+filter).show(400);
+                    $('.image').not('.'+filter).hide(200);
+                    $('.image').filter('.'+filter).show(400);
                 }
             });
         });
 
-        /*Pop Ups*/
+        $(document).ready(function(){
+
+            $(".buttons1").click(function(){
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var filter = $(this).attr('data-filter');
+
+                if(filter == 'all1'){
+                    $('.image1').show(400);
+                }else{
+                    $('.image1').not('.'+filter).hide(200);
+                    $('.image1').filter('.'+filter).show(400);
+                }
+            });
+        });
+
+        $(document).ready(function(){
+
+            $(".buttons2").click(function(){
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var filter = $(this).attr('data-filter');
+
+                if(filter == 'all2'){
+                    $('.image2').show(400);
+                }else{
+                    $('.image2').not('.'+filter).hide(200);
+                    $('.image2').filter('.'+filter).show(400);
+                }
+            });
+        });
+
+        //Pop Ups
         const pop = document.querySelector(".read");
         const story1 = document.querySelector(".story1-more");
 
@@ -305,8 +334,6 @@
 
             pop.classList.toggle("active");
             story1.classList.toggle("active");
-            
-
         });
 
         document.querySelector('.close-more').onclick = () =>{
