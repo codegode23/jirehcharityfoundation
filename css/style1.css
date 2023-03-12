@@ -280,13 +280,26 @@
 }
 
     .story-gallery .controls{
-        padding: 10px 0;
+        /* padding: 10px 10px; */
+        overflow-x: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        scroll-behavior: smooth;
+       
     }
+    
+    .story-gallery .controls::-webkit-scrollbar{
+        display: none;
+    }
+    
 
     .story-gallery .controls .buttons,
-    .story-gallery .controls .buttons1
+.story-gallery .controls .buttons1,
+.story-gallery .controls .buttons2
     {
        font-size: 15px;
+       width: 250px;
+       padding: -20px 20px;
     }
 }
 
