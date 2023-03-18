@@ -159,23 +159,6 @@ header .navigation .navigation-items a:hover:before{
             
         }
 
-        .home .media-icon a{
-            color: #fff;
-            font-size: 1.6em;
-            transition: 0.3s ease;
-        }
-
-        .home .media-icon a:not(:last-child){
-            margin-bottom: 20px;
-
-        }
-
-        .home .media-icon a:hover{
-            transform: scale(1.3);
-            color:rgb(231, 68, 68);
-        }
-
-
         .home video{
             z-index: 000;
             position: absolute;
